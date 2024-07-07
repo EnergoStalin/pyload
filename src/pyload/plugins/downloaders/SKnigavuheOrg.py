@@ -3,8 +3,8 @@
 from ..base.simple_downloader import SimpleDownloader
 
 
-class KnigavuheOrg(SimpleDownloader):
-    __name__ = "KnigavuheOrg"
+class SKnigavuheOrg(SimpleDownloader):
+    __name__ = "SKnigavuheOrg"
     __type__ = "downloader"
     __version__ = "0.01"
     __status__ = "testing"

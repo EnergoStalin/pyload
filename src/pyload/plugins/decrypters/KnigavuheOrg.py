@@ -50,13 +50,14 @@ class KnigavuheOrg(BaseDecrypter):
         if not data or not title:
             return
 
+        package = pyfile.package()
         self.packages.append(
             (
-                title or pyfile.package().name,
+                title or package.name,
                 [
                     f"{x['url']}#{x['title']}{os.path.splitext(x['url'])[1]}"
                     for x in data
                 ],
-                title or pyfile.package().folder,
+                title or package.folder,
             )
         )
